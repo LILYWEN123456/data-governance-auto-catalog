@@ -1,0 +1,25 @@
+{
+  "skill_id": "data_governance_auto_catalog",
+  "name": "数据治理智能编目",
+  "description": "从Excel/数据库自动生成标准数据编目，支持字段映射、资源挂载、编目草稿生成",
+  "version": "1.0.0",
+  "author": "Data Governance Team",
+  "type": "tool",
+  "tags": ["数据治理","智能编目","字段映射","资源挂载"],
+  "trigger": ["生成数据编目","自动编目","数据目录","数据库表编目"],
+  "input": {
+    "formats": ["xlsx", "csv", "database"],
+    "description": "源数据Excel或数据库表信息"
+  },
+  "output": {
+    "formats": ["xlsx", "json"],
+    "description": "标准编目文件 + 映射报告"
+  },
+  "assets": [
+    "assets/template_catalog.xlsx",
+    "assets/sample_source_data.xlsx"
+  ],
+  "scripts": {
+    "main": "scripts/auto_catalog.py"
+  }
+}
