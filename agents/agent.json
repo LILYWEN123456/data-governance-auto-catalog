@@ -1,0 +1,9 @@
+{
+  "agent_id": "excel_governance_agent",
+  "name": "数据治理Excel智能体",
+  "description": "负责读取、解析、匹配、填充、生成标准化Excel",
+  "skills": ["data_governance_excel_auto_fill"],
+  "tools": ["excel_reader", "excel_writer", "field_matcher", "db_connector"],
+  "plan_enabled": true,
+  "memory_enabled": true
+}
